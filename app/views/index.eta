@@ -1,0 +1,18 @@
+<h1>Names and addresses!</h1>
+<form method="POST">
+  <input type="text" name="name" /><br/>
+  <input type="text" name="address" /><br/>
+  <input type="submit" value="Submit!" />
+</form>
+<table>
+  <tr>
+    <th>Name</td>
+    <th>Address</th>
+  </tr>
+  <% it.people.forEach((person) => { %>
+    <tr>
+      <td><%= person.name %></td>
+      <td><%= person.address %></td>
+    </tr>
+  <% }); %>
+</table>
